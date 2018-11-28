@@ -4,6 +4,7 @@ body {
     font-family: monospace;
     overflow: hidden;
     background: #4494B5;
+    height: 100vh;
 }
 
 #dark_overlay {
@@ -61,10 +62,21 @@ header button {
 
 main {
     height: 81vh;
+    background-size: 360px;
     background: url(d383f7f62937f2b76e183dea00884552.png) no-repeat center center,
     url(dd2c3d34a9043cdb13740cabdf7cc6b2.gif) no-repeat center center;
-    background-size: 360px;
+}
 
+main .no-avatar {
+    background: #4494B5;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .carousel {
@@ -193,6 +205,13 @@ main {
     }
 }
 
+.bottom {
+    position: absolute;
+    top: 90vh;
+    right: 30%;
+    left: 30%
+}
+
 footer {
     padding: 0;
     margin: 2vh auto;
@@ -210,12 +229,17 @@ footer button {
 }
 
 footer button:hover {
-    background: #71c9cc;
+    background: #c5f5f6;
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.circle-centre p {
+    transform: scale(1.4);
 }
 
 footer p {
     margin: 0 auto;
     padding: 0;
+    color: #4494B5;
 }
